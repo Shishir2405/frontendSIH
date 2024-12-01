@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Social Media Icons */
+.social-icon {
+  @apply h-6 w-6 text-gray-400 hover:text-white transition-colors duration-300;
+}
+
+/* Feature Icons */
+.feature-icon {
+  @apply h-12 w-12 mb-4 mx-auto text-blue-500;
+}
+
+/* Contact Icons */
+.contact-icon {
+  @apply h-8 w-8 text-blue-500 mr-4;
+}
