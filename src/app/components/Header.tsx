@@ -13,7 +13,7 @@ export default function Header() {
       <nav className="z-10 top-0 left-0 right-0 max-w-4xl xl:max-w-5xl mx-auto px-5 py-2.5 lg:border-none lg:py-4">
         <div className="flex items-center justify-between w-full">
           
-          {/* Removed Logo */}
+         
           <Link href="/">
             <button>
               <div className="flex items-center space-x-2">
@@ -41,13 +41,19 @@ export default function Header() {
           </div>
 
           {/* Sign up and Login buttons */}
-          <div className="hidden lg:flex lg:items-center gap-x-2">
-            <button className="flex items-center text-black dark:text-white justify-center px-6 py-2.5 font-semibold hover:bg-blue-500 hover:text-white">
-              Sign up
-            </button>
-            <button className="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:bg-blue-600 hover:drop-shadow transition duration-200">
+          <div className="flex space-x-4">
+            <Link
+              href="/login"
+              className="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:bg-blue-900 hover:drop-shadow transition duration-200"
+            >
               Login
-            </button>
+            </Link>
+            <Link
+              href="/signup"
+              className="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:bg-blue-900 hover:drop-shadow transition duration-200"
+            >
+              Sign Up
+            </Link>
           </div>
 
           {/* Mobile menu button */}
