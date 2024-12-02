@@ -1,7 +1,7 @@
 import { ShieldCheckIcon, FileTextIcon, LockIcon, GlobeIcon } from 'lucide-react';
 
 const features = [
-  {
+ {
     icon: <ShieldCheckIcon className="h-12 w-12 text-blue-500" />,
     title: 'AI-Powered Verification',
     description: 'Advanced machine learning algorithms detect document authenticity with 99% accuracy.',
@@ -25,7 +25,7 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-20 bg-white">
+    <section id="Features" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-black text-center mb-12">Our Key Features</h2>
         <div className="grid md:grid-cols-4 gap-8">

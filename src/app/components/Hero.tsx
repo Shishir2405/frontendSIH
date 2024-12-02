@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <header className="relative py-20">
+    <header id="home" className="relative py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
         <div>
           <h1 className="text-5xl font-extrabold text-gray-900 mb-6">Secure. Instant. Verified.</h1>
