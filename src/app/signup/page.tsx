@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Eye, EyeOff, UserCheck, Shield, Mail } from 'lucide-react';
+import Sidebar from '../components/dashboard/Sidebar';
 
 export default function Signup() {
   const [formData, setFormData] = useState({ 
@@ -59,6 +60,7 @@ export default function Signup() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+      
       <div className="w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden">
         <div className="bg-gradient-to-r from-blue-500 to-indigo-600 p-6 text-center">
           <h2 className="text-3xl font-bold text-white flex items-center justify-center">
